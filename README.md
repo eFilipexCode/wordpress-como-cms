@@ -1,10 +1,13 @@
 # HTML para Wordpress
-## Guia Basico
+## Guia Básico
 
 ### 1 - Copiar a pasta do site para wp-content/themes/
 Isso vai criar um tema para o wordpress. 
+
+```
 Dica: Usar uma thumbnail para o tema com o nome "screenshot" de 880x660 pixels que deve
 ser colocada na raiz do site.
+```
 
 ### 2 - Mudar index.html para index.php
 Assim o Wordpress localiza o tema.
@@ -30,7 +33,7 @@ Tudo pronto. Basta abrir o Wordpress e trocar o tema.
 ### 6 - Corrigir o caminho do style.css e outros caminhos se for o caso
 
 ```html
-link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 ```
 
 ### 7 - Separar o header e o footer em arquivos header.php e footer.php
